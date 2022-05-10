@@ -1,9 +1,6 @@
-import wedding from "../assets/wedding.jpg";
-import "./styles/about.scss";
-
-const About = () => {
+const Test = () => {
   return (
-    <div className="about" id="about">
+    <div className="about" style={{ paddingBottom: "300px" }}>
       <div className="container">
         <div className="about-holder">
           <div className="text">
@@ -63,14 +60,11 @@ const About = () => {
               varius orci vel, fringilla tortor.
             </p>
           </div>
-          <div
-            className="image"
-            style={{ background: `url(${wedding})`, backgroundSize: "cover" }}
-          ></div>
+          <div className="image"></div>
         </div>
       </div>
     </div>
   );
 };
 
-export default About;
+export default Test;
