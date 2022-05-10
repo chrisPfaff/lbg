@@ -1,0 +1,27 @@
+@import "pallete.scss";
+
+.header {
+  background-color: $congo-pint;
+  @include desktop {
+    padding: 40px;
+  }
+  .header-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .link {
+      text-decoration: none;
+      color: $grey;
+    }
+  }
+  .company-image {
+    display: block;
+    color: $laurel-green;
+    @include desktop {
+      padding-right: 20px;
+      padding-left: 20px;
+      width: 100px;
+    }
+  }
+}

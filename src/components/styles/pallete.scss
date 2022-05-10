@@ -1,0 +1,21 @@
+//pallette
+
+$laurel-green: #9CB299;
+$congo-pint:#FF958F;
+$linen: #ebe2da;
+$gold-crayola: #f3c188;
+$grey: #58564f;
+$black: #000;
+
+@mixin phone {
+  @media (max-width: 368px) { @content; }
+}
+@mixin tablet {
+  @media (min-width: 768px) { @content; }
+}
+@mixin medium-tablet {
+  @media (min-width: 992px) { @content; }
+}
+@mixin desktop {
+  @media (min-width: 1200px) { @content; }
+}

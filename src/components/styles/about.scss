@@ -1,0 +1,21 @@
+@import "pallete.scss";
+
+#about {
+  .about-holder {
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+    }
+    .text {
+      @include desktop {
+        width: 50%;
+        padding-right: 32px;
+      }
+    }
+    .image {
+      @include desktop {
+        width: 50%;
+      }
+  }
+}
+}
