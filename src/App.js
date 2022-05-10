@@ -1,9 +1,11 @@
 import React from "react";
 import { render } from "react-dom";
 import { StrictMode } from "react";
-import ErrorBoundary from "./components/ErrorBoundary";
+import ErrorBoundary from "./ErrorBoundary.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
+import About from "./components/About";
+import Test from "./components/Test.js";
 
 const App = () => {
   return (
@@ -11,9 +13,11 @@ const App = () => {
       <BrowserRouter>
         <ErrorBoundary>
           <Header />
-          <Routes>
+          <Test />
+          <About />
+          {/* <Routes>
             <Route path="/about/" element={<About />} />
-          </Routes>
+          </Routes> */}
         </ErrorBoundary>
       </BrowserRouter>
     </StrictMode>
