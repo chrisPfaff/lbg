@@ -1,6 +1,9 @@
-const Test = () => {
+const Test = ({ stickyMargin }) => {
   return (
-    <div className="about" style={{ paddingBottom: "300px" }}>
+    <div
+      className="about"
+      style={{ marginTop: stickyMargin > 0 ? stickyMargin : 0 }}
+    >
       <div className="container">
         <div className="about-holder">
           <div className="text">
