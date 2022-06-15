@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import "./styles/header.scss";
 import flower from "../assets/flower.svg";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
-const Header = () => {
+const Header = ({ setStickyMargin }) => {
+  const [sticky, setSticky] = useState(false);
+
   useEffect(() => {
     window.addEventListener("scroll", isSticky);
     return () => {
@@ -12,15 +14,13 @@ const Header = () => {
   });
 
   const isSticky = (e) => {
-    const header = document.querySelector(".header");
     const scrollTop = window.scrollY;
-    scrollTop >= 140
-      ? header.classList.add("is-sticky")
-      : header.classList.remove("is-sticky");
+    scrollTop >= 140 ? setSticky(true) : setSticky(false);
+    scrollTop >= 140 ? setStickyMargin(234) : setStickyMargin(0);
   };
 
   return (
-    <div className="header">
+    <div className={"header" + (sticky ? " is-sticky" : "")}>
       <div className="container">
         <div className="header-holder">
           <Link to={`/`} className="link">
