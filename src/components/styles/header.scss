@@ -3,7 +3,10 @@
 .header {
   background-color: $congo-pint;
   @include desktop {
-    padding: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    transition: padding-top 0.5s ease;
+    transition: padding-bottom 0.5s ease;
   }
   .header-holder {
     display: flex;
@@ -32,7 +35,7 @@
     z-index: 999;
     box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
     background-color: $congo-pint;
-    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    transition: all 1s ease;
     padding-top: 0px;
     padding-bottom: 0px;
 }
