@@ -2,11 +2,13 @@
 
 .header {
   background-color: $congo-pint;
+  z-index: 2;
   @include desktop {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    transition: padding-top 0.5s ease;
-    transition: padding-bottom 0.5s ease;
+    padding-top: 22px;
+    padding-bottom: 10px;
+    height: 100px;
+    transition: height 0.5s ease;
+    transition: padding 0.5s ease;
   }
   .header-holder {
     display: flex;
@@ -36,7 +38,8 @@
     box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
     background-color: $congo-pint;
     transition: all 1s ease;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    height: 75px;
+    padding-top: 8px;
+    opacity: 0.9;
 }
 }
