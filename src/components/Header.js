@@ -11,12 +11,12 @@ const Header = ({ setStickyMargin }) => {
     return () => {
       window.removeEventListener("scroll", isSticky);
     };
-  });
+  }, []);
 
   const isSticky = (e) => {
     const scrollTop = window.scrollY;
-    scrollTop >= 140 ? setSticky(true) : setSticky(false);
-    scrollTop >= 140 ? setStickyMargin(234) : setStickyMargin(0);
+    scrollTop > 145 ? setSticky(true) : setSticky(false);
+    scrollTop > 145 ? setStickyMargin(234) : setStickyMargin(0);
   };
 
   return (
