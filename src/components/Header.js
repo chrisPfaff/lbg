@@ -15,8 +15,8 @@ const Header = ({ setStickyMargin }) => {
 
   const isSticky = (e) => {
     const scrollTop = window.scrollY;
-    scrollTop > 145 ? setSticky(true) : setSticky(false);
-    scrollTop > 145 ? setStickyMargin(234) : setStickyMargin(0);
+    scrollTop > 5 ? setSticky(true) : setSticky(false);
+    scrollTop > 5 ? setStickyMargin(95) : setStickyMargin(0);
   };
 
   return (

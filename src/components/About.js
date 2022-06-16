@@ -1,5 +1,6 @@
 import wedding from "../assets/wedding.jpg";
 import "./styles/about.scss";
+import { useState } from "react";
 
 const About = () => {
   return (

@@ -5,7 +5,7 @@ import ErrorBoundary from "./ErrorBoundary.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import About from "./components/About";
-import Test from "./components/Test.js";
+import Hero from "./components/Hero.js";
 
 const App = () => {
   const [stickyMargin, setStickyMargin] = useState(0);
@@ -15,7 +15,7 @@ const App = () => {
       <BrowserRouter>
         <ErrorBoundary>
           <Header setStickyMargin={setStickyMargin} />
-          <Test stickyMargin={stickyMargin} />
+          <Hero stickyMargin={stickyMargin} />
           <About />
           {/* <Routes>
             <Route path="/about/" element={<About />} />
