@@ -1,10 +1,22 @@
+@import "pallete.scss";
+
 .hero {
   background-image: url(../../assets/wedding.jpg);
   background-size: cover;
   background-position-y: -10px;
   background-repeat: no-repeat;
-  z-index: -1;
   height: 300px;
   width: 100%;
   background-position-y: -743px;
+  background-position: center;
+  &:before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    bottom: 610px;
+    z-index: -1;
+    right: 0;
+    left: 0;
+    background-color: $gold-crayola;
+  }
 }

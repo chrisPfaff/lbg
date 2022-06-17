@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import About from "./components/About";
 import Hero from "./components/Hero.js";
+import Footer from "./components/Footer.js";
 
 const App = () => {
   const [stickyMargin, setStickyMargin] = useState(0);
@@ -20,6 +21,7 @@ const App = () => {
           {/* <Routes>
             <Route path="/about/" element={<About />} />
           </Routes> */}
+          <Footer />
         </ErrorBoundary>
       </BrowserRouter>
     </StrictMode>

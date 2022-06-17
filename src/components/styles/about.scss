@@ -1,6 +1,9 @@
 @import "pallete.scss";
 
 #about {
+  @include desktop {
+    margin: 80px 0;
+  }
   .about-holder {
     @include desktop {
       display: flex;
