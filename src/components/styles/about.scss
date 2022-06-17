@@ -22,7 +22,12 @@
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         gap: 2px;
-
+        div {
+          transition: transform .2s;
+        }
+        div:hover {
+          transform: scale(1.2);
+        }
         .image-one {
           background-size: cover;
           grid-area: 1 / 1 / 3 / 3;
