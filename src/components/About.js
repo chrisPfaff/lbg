@@ -1,4 +1,9 @@
 import wedding from "../assets/wedding.jpg";
+import makeup from "../assets/makeup-1.jpg";
+import makeup2 from "../assets/makeup-2.jpg";
+import makeup3 from "../assets/makeup-3.jpg";
+import makeup4 from "../assets/makeup-4.jpg";
+
 import "./styles/about.scss";
 import { useState } from "react";
 
@@ -64,10 +69,11 @@ const About = () => {
               varius orci vel, fringilla tortor.
             </p>
           </div>
-          <div
-            className="image"
-            style={{ background: `url(${wedding})`, backgroundSize: "cover" }}
-          ></div>
+          <div className="image-holder">
+            <div className="image-one"></div>
+            <div className="image-two"></div>
+            <div className="image-three"></div>
+          </div>
         </div>
       </div>
     </div>
