@@ -1,9 +1,3 @@
-import wedding from "../assets/wedding.jpg";
-import makeup from "../assets/makeup-1.jpg";
-import makeup2 from "../assets/makeup-2.jpg";
-import makeup3 from "../assets/makeup-3.jpg";
-import makeup4 from "../assets/makeup-4.jpg";
-
 import "./styles/about.scss";
 import { useState } from "react";
 
@@ -11,27 +5,28 @@ const About = () => {
   return (
     <div className="about" id="about">
       <div className="container">
+        <h1>Old New Borrowed Blue Beauty</h1>
         <div className="about-holder">
           <div className="text">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              placerat laoreet orci, ut vulputate lectus. Mauris sit amet rutrum
-              purus. Aenean vitae lorem vitae purus sodales volutpat. Nunc
-              molestie rhoncus augue, eu egestas dui suscipit malesuada. Class
-              aptent taciti sociosqu ad litora torquent per conubia nostra, per
-              inceptos himenaeos. Duis non luctus massa. Fusce blandit egestas
-              viverra. Nulla ac nunc quis ex rutrum fermentum eget feugiat leo.
-              Vestibulum non massa porta, dignissim nulla a, sagittis leo.
-              Aenean semper mollis est, vitae condimentum est auctor nec. Nunc
-              blandit tristique pulvinar. Aliquam erat volutpat. Integer mollis
-              risus lacinia bibendum aliquet. Integer sodales lobortis enim a
-              eleifend. Maecenas mauris purus, porta quis mattis quis, eleifend
-              at orci. Pellentesque porta sit amet massa ac rhoncus. Mauris
-              consectetur vitae nisl auctor dapibus. Aenean eget ante
-              condimentum, eleifend nibh ut, maximus nisl. Mauris ullamcorper
-              nibh et imperdiet varius. Sed nisi tellus, molestie ut hendrerit
-              nec, hendrerit lobortis nunc. Aenean lacus arcu, tincidunt ac
-              libero non, dignissim luctus ex.{" "}
+              <span className="first">L</span>orem ipsum dolor sit amet,
+              consectetur adipiscing elit. Nulla placerat laoreet orci, ut
+              vulputate lectus. Mauris sit amet rutrum purus. Aenean vitae lorem
+              vitae purus sodales volutpat. Nunc molestie rhoncus augue, eu
+              egestas dui suscipit malesuada. Class aptent taciti sociosqu ad
+              litora torquent per conubia nostra, per inceptos himenaeos. Duis
+              non luctus massa. Fusce blandit egestas viverra. Nulla ac nunc
+              quis ex rutrum fermentum eget feugiat leo. Vestibulum non massa
+              porta, dignissim nulla a, sagittis leo. Aenean semper mollis est,
+              vitae condimentum est auctor nec. Nunc blandit tristique pulvinar.
+              Aliquam erat volutpat. Integer mollis risus lacinia bibendum
+              aliquet. Integer sodales lobortis enim a eleifend. Maecenas mauris
+              purus, porta quis mattis quis, eleifend at orci. Pellentesque
+              porta sit amet massa ac rhoncus. Mauris consectetur vitae nisl
+              auctor dapibus. Aenean eget ante condimentum, eleifend nibh ut,
+              maximus nisl. Mauris ullamcorper nibh et imperdiet varius. Sed
+              nisi tellus, molestie ut hendrerit nec, hendrerit lobortis nunc.
+              Aenean lacus arcu, tincidunt ac libero non, dignissim luctus ex.{" "}
             </p>
             <p>
               Vivamus quis nibh metus. Duis consequat porta ex volutpat
